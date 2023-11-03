@@ -1,0 +1,129 @@
+:root{
+    --primery-dark:#222222;
+    --light-text-color:#FFF;
+    --light-red-color:#FD5956;
+}
+/* .navbar{
+    /* padding: 10px 10vw; 
+} */
+.hedder-style{
+    position: fixed; 
+    width: 100%; 
+    z-index: 1;
+    
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar-local{
+    background-color: var(--primery-dark);
+    
+   
+}
+
+.my_name{
+    /* font-family: 'Roboto', sans-serif; */
+    color: var(--light-text-color);
+    font-size:xx-large;
+    font-weight: 600;
+    margin-right: 20px;
+}
+.my_title{
+ color: var(--light-red-color);
+    font-size:x-large;
+    font-weight: 500;
+    
+    letter-spacing: 10px;
+}
+.intro{
+    background-color: var(--primery-dark);
+    color: var(--light-text-color);
+
+}
+.main-content{
+    position: absolute;
+    width: 100%;
+    
+}
+
+.content{
+    margin-left: 5%;
+    margin-right: 1%;
+    /* padding: 0 10vw; */
+   
+}
+.discription{
+    font-size: medium;
+    font-weight: 600;
+}
+.caption p{
+    z-index: 1;
+    /* text-align: justify; */
+  
+
+}
+/* .image-content{
+    
+} */
+.caption{
+
+  
+    font-size: 3rem;
+    font-weight: 900;
+    height: 90vh;
+    width: 35vw;
+    /* padding-left: 5%; */
+    margin-left: 5%;
+    min-width: 600px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.image-content{
+   margin-top: 5rem;
+    position: relative;
+   
+}
+
+.my-imgae{
+    position: absolute;
+   
+    bottom:0;
+    right: 4%;
+    z-index: 0;
+    min-width: 300px;
+    max-width: 500px;
+    
+}
+.my-imgae img{
+    max-width: 100%;
+}
+.icons{
+    position: absolute;
+    right: 10;
+    top :0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    
+}
+
+nav .navbar-nav li a{
+    color: var(--light-text-color) !important;
+    }
+    nav .navbar-nav li a:hover{
+        color: var(--light-red-color) !important;
+    }
+.icons li{
+    padding: 10px;
+  list-style: none;
+}
+.icons a{
+    color: var(--light-text-color);
+}
+.icons a:hover{
+    color:var(--light-red-color)
+}
