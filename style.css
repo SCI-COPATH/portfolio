@@ -6,13 +6,22 @@
 /* .navbar{
     /* padding: 10px 10vw; 
 } */
+::-webkit-scrollbar{
+    width: 0px;
+}
+.my-hedding{
+    padding-right: 0 !important;
+    margin: 0;
+   
+}
 .hedder-style{
     position: fixed; 
     width: 100%; 
-    z-index: 1;
+    z-index: 2;
     
 }
 body{
+    
     font-family: 'Roboto', sans-serif;
 }
 
@@ -34,9 +43,12 @@ body{
     font-size:x-large;
     font-weight: 500;
     
+    text-transform: uppercase;
     letter-spacing: 10px;
+    
 }
 .intro{
+    padding-top: 5rem;
     background-color: var(--primery-dark);
     color: var(--light-text-color);
 
@@ -54,8 +66,9 @@ body{
    
 }
 .discription{
-    font-size: medium;
-    font-weight: 600;
+    font-style: normal;
+    font-size: 1.125rem;
+    font-weight: 400;
 }
 .caption p{
     z-index: 1;
@@ -82,7 +95,7 @@ body{
     
 }
 .image-content{
-   margin-top: 5rem;
+   /* margin-top: 5rem; */
     position: relative;
    
 }
@@ -126,4 +139,67 @@ nav .navbar-nav li a{
 }
 .icons a:hover{
     color:var(--light-red-color)
+}
+.boxes{
+    color: var(--primery-dark);
+    padding-top: 5rem;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.about-me{
+    position: relative;
+    /* vertical-align: middle; */
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: medium;
+    /* text-align: center; */
+    width: 80vw;
+    margin: auto;
+}
+
+.about-me h1{
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 2;
+}
+.about-me p{
+
+font-size:x-large;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.cv{
+ text-align: left;
+ text-decoration: none;
+ background-color: var(--light-red-color);
+ padding: 10px 30px;
+ color: var(--light-text-color);
+ border-radius: 10px;
+ font-weight: 700;
+}
+.cv:hover{
+    background-color: var(--primery-dark);
+    color: var(--light-text-color);
+}
+.cv-div{
+    margin: 0;
+    
+}
+.left-box-greadint{
+    
+    position: absolute;
+    left:-1150;
+    bottom: 300px;
+    /* bottom: 60vh; */
+    width: 101.15544rem;
+height: 31.625rem;
+transform: rotate(60deg);
+/* flex-shrink: 0; */
+
+background-image: linear-gradient(101deg, #FDC1C5 27.04%, rgba(253, 193, 197, 0.00) 83.13%);
+z-index: 1;
+opacity: 0.5;
 }
