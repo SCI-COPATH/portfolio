@@ -16,6 +16,8 @@
 .my-hedding{
     padding-right: 0 !important;
     margin: 0;
+    display: flex;
+        flex-direction: row;
    
 }
 .hedder-style{
@@ -120,7 +122,6 @@ body{
     
 }
 .icons{
-    
     position: absolute;
     right: 10;
     top :0;
@@ -128,7 +129,6 @@ body{
     justify-content: center;
     flex-direction: column;
     height: 100%;
-   
     
 }
 
@@ -453,8 +453,13 @@ footer a:hover{
 }
 /* modbiel */
 @media only screen and (max-width: 960px) {
-    main-content{
-        position: static;
+    .intro{
+        padding-top: 9rem;
+        
+    
+    }
+    .main-content{
+        position: absolute;
         width: 100%;
         
     }
@@ -483,15 +488,16 @@ footer a:hover{
     
       
         /* font-size: 3rem; */
-        font-size:4dvw;
+        margin: auto 20px;
+        font-size:2rem;
         font-weight: 900;
         height: 90vh;
         width: 35vw;
         /* padding-left: 5%; */
         margin-left: 5%;
-        min-width: 600px;
+        min-width:90%;
         display: flex;
-        justify-content: center;
+        justify-content: left;
         flex-direction: column;
         
     }
@@ -507,8 +513,8 @@ footer a:hover{
         bottom:0;
         right: 4%;
         z-index: 0;
-        min-width: 300px;
-        max-width: 500px;
+        max-width: 400px;
+        min-width: 200px;
         
     }
     .my-imgae img{
@@ -526,10 +532,109 @@ footer a:hover{
         
     }
     
-    
-    
-}
-/* tab  */
-/* @media only screen and (max-width: 768px) {
+    nav .navbar-nav li a{
+        color: var(--light-text-color) !important;
+        }
+        nav .navbar-nav li a:hover{
+            color: var(--light-red-color) !important;
+        }
+    .icons li{
+        padding: 10px;
+      list-style: none;
+    }
+    .icons a{
+        color: var(--light-text-color);
+    }
+    .icons a:hover{
+        color:var(--light-red-color)
+    }
+    .about-me p{
 
-} */
+        font-size:large;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    .inisde-box{
+        padding:10px;
+        margin: auto;
+        width: 90vw;
+    }
+    .lises{
+        display: block;
+    }
+    .cards{
+        display: block;
+    }
+    .card{
+        min-width: 100%;
+        margin: 30px auto;
+    }
+    
+    .contact-content{
+        text-align: left;
+        display: block;
+        /* justify-content: space-between; */
+    }
+    .contact-content h2{
+        padding: 20px;
+        margin-bottom: 40px;
+    }
+} 
+
+@media only screen and (max-width: 600px){
+    .my_name{
+        /* font-family: 'Roboto', sans-serif; */
+        color: var(--light-text-color);
+        font-size:xx-large;
+        font-weight: 600;
+        margin-right: 20px;
+    }
+    .my_title{
+     color: var(--light-red-color);
+        font-size:medium;
+        font-weight: 500;
+        
+        text-transform: uppercase;
+        letter-spacing: 10px;
+        
+    }
+    .my-hedding{
+        display: flex;
+        flex-direction: column;
+        padding-right: 0 !important;
+        margin: 0;
+        padding: 0 !important; 
+       
+    }
+    .hedder-style{
+        position: fixed; 
+        width: 100%; 
+        z-index: 2;
+        
+    }
+    .my-imgae{
+        position: absolute;
+       
+        bottom:0;
+        right: 80px;
+        z-index: 0;
+        max-width: 400px;
+        min-width: 200px;
+        
+    }
+    /* .caption{
+        text-align: center;
+    } */
+    .icons{
+        position: absolute;
+        right: 10;
+        top :0;
+        display: flex;
+        justify-content:end;
+        flex-direction: column;
+        height: 100%;
+        
+    }
+
+}
