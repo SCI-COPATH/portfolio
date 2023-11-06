@@ -584,6 +584,7 @@ footer a:hover{
         padding: 20px;
         margin-bottom: 40px;
     }
+    
 } 
 
 @media only screen and (max-width: 600px){
@@ -640,5 +641,11 @@ footer a:hover{
         height: 100%;
         
     }
+    .cv-div{
+        /* margin: auto; */
+        text-align: center;
+        
+    }
+    
 
 }
