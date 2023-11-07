@@ -589,6 +589,10 @@ footer a:hover{
 } 
 
 @media only screen and (max-width: 600px){
+    .caption{
+    
+        font-size:1.9rem;
+    }
     .my_name{
         /* font-family: 'Roboto', sans-serif; */
         color: var(--light-text-color);
@@ -647,6 +651,9 @@ footer a:hover{
         text-align: center;
         
     }
-    
+    footer li,footer a{
+        padding: 2px;
+        /* color: var(--light-text-color); */
+    }
 
 }
