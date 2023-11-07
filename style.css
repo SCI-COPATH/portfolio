@@ -48,8 +48,8 @@ body{
  color: var(--light-red-color);
     font-size:x-large;
     font-weight: 500;
-    
-    text-transform: uppercase;
+    vertical-align: middle;
+    margin: auto 0;
     letter-spacing: 10px;
     
 }
@@ -272,7 +272,7 @@ li,ul{
 .expertise-short{
     margin: auto;
     max-width: 600px;
-    margin-bottom: 60px;
+    margin-bottom: 10px;
 }
 .expert-outer{
    
@@ -323,11 +323,13 @@ li,ul{
 .recent_works small{
     color: var(--light-red-color);
     text-transform: uppercase;
+   
 }
 .recent_works h4{
     /* color: var(--light-red-color); */
     max-width: 550px;
     margin: auto;
+    margin-top: 10px;
 }
 .works-outer{
     margin-top:40px ;
@@ -384,13 +386,20 @@ li,ul{
     display: flex;
     justify-content: space-between;
 }
+.contact-content a{
+    color: var(--light-text-color);
+
+}
+.contact-content a:hover{
+    color: var(--light-red-color);
+}
 .contact-content h2 span{
     text-decoration: underline;
 }
 .contact-content h2{
     max-width: 500px;
     vertical-align: middle;
-    margin: auto 0;
+    margin: 30px 0 ;
     padding: 0px !important;
 }
 .form input ,.form textarea{
@@ -405,6 +414,9 @@ li,ul{
     margin: 2px 0px;
 
     
+}
+.icons-text{
+    margin: auto;
 }
 .two-ele{
     display: flex;
@@ -443,18 +455,21 @@ footer{
     
 }
 
-footer ul{
+.footer-list ul{
     list-style: none;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     
 }
-footer li,footer a{
+.footer-list li,.footer-list a{
     padding: 5px;
     color: var(--light-text-color);
 }
-footer a:hover{
+.footer-list a:hover{
     color: var(--light-red-color);
+}
+footer ul{
+    display: none !important;
 }
 /* modbiel */
 @media only screen and (max-width: 960px) {
@@ -585,13 +600,20 @@ footer a:hover{
         padding: 20px;
         margin-bottom: 40px;
     }
+    footer ul{
+        display: flex !important;
+        justify-content: center !important;
+    }
+    .icons-text ul{
+        display: none;
+    }
     
 } 
 
 @media only screen and (max-width: 600px){
     .caption{
     
-        font-size:1.9rem;
+        font-size:2.0rem;
     }
     .my_name{
         /* font-family: 'Roboto', sans-serif; */
@@ -651,7 +673,7 @@ footer a:hover{
         text-align: center;
         
     }
-    footer li,footer a{
+    .footer-list li,.footer-list a{
         padding: 2px;
         /* color: var(--light-text-color); */
     }
