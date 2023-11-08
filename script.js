@@ -1,11 +1,22 @@
 let toggle_button=document.getElementById('toggle-button')
 let toggle_button_2=document.getElementById('navbarSupportedContent')
+
 let form_data=document.getElementById('frm')
-function navToggle(){
-    console.log("clicked")
-    toggle_button.classList.add('collapsed')
-    toggle_button.ariaExpanded=true
-    toggle_button_2.classList.remove('show')
+
+function navivateLocation(loc){
+    location = loc;
+    collapsData=document.querySelectorAll('.nav-item')
+    for(let local=0;local<collapsData.length;local++){
+        collapsData[local].setAttribute("data-bs-toggle", "collapsed")
+    }
+   
+}
+function collapsMode(){
+    collapsData=document.querySelectorAll('.nav-item')
+    for(let local=0;local<collapsData.length;local++){
+        collapsData[local].setAttribute("data-bs-toggle", "collapse")
+    }
+    
 }
 
 form_data.addEventListener("submit",(e)=>{

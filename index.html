@@ -38,24 +38,33 @@
 
         <button id='toggle-button' class="navbar-toggler" type="button" data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-          aria-label="Toggle navigation">
+          aria-label="Toggle navigation" onclick="collapsMode()">
           <!-- <span class="navbar-toggler-icon"></span> -->
-          <span class="fa-solid fa-bars"></span>
+          <span class="fa-solid fa-bars" ></span>
+          
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item" onclick="navToggle()">
-              <a class="nav-link" href="#home">Home</a>
+            <li class="nav-item" id="navitm1"  data-bs-toggle="" 
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false">
+              <a class="nav-link"  onclick="navivateLocation('#home')">Home</a>
             </li>
-            <li class="nav-item" onclick="navToggle()">
-              <a class="nav-link" href="#about-us">About us</a>
+            <li class="nav-item"  data-bs-toggle=""
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+  
+            >
+              <a class="nav-link" onclick="navivateLocation('#about-us')" >About us</a>
             </li>
-            <li class="nav-item" onclick="navToggle()">
-              <a class="nav-link" href="#Exp">Expertise</a>
+            <li class="nav-item"  data-bs-toggle=""
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            >
+              <a class="nav-link"  onclick="navivateLocation('#Exp')">Expertise</a>
             </li>
 
-            <li class="nav-item" onclick="navToggle()">
-              <a class="nav-link" href="#contactUs">contact us</a>
+            <li class="nav-item"  data-bs-toggle=""
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            >
+              <a class="nav-link" onclick="navivateLocation('#contactUs')">contact us</a>
             </li>
           </ul>
         </div>
