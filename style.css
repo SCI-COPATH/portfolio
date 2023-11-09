@@ -160,8 +160,11 @@ nav .navbar-nav li a{
     flex-direction: column;
     justify-content: center;
 }
-#Exp{
-    padding-top: 0px;
+#about-us{
+    margin-bottom: 0;
+}
+#contactUs{
+    padding-top: 100px;
 }
 .inisde-box{
     text-align: center;
@@ -614,6 +617,9 @@ footer ul{
 } 
 
 @media only screen and (max-width: 600px){
+    .cards{
+        margin-top: 30px;
+    }
     .caption{
     
         font-size:2.0rem;
