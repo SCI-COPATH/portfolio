@@ -150,16 +150,19 @@ nav .navbar-nav li a{
     color:var(--light-red-color)
 }
 .boxes{
+    scroll-margin-top: 80px;
     color: var(--primery-dark);
     /* padding-top: 50vh; */
-    padding-top: 100px;
+    padding-top: 15px;
     /* height: 70vh; */
     /* min-height: 100vh; */
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-
+#Exp{
+    padding-top: 0px;
+}
 .inisde-box{
     text-align: center;
     padding: 10px;

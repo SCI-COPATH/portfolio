@@ -3,8 +3,19 @@ let toggle_button_2=document.getElementById('navbarSupportedContent')
 
 let form_data=document.getElementById('frm')
 
+
 function navivateLocation(loc){
+    
+    // console.log()
+    // let pt=document.getElementById(loc.split('#')[1])
+    // pt.classList.add('pt')
+    // setTimeout(function(){
+    //     //do what you need here
+    //     pt.classList.remove('pt')
+    // }, 2000);
+    
     location = loc;
+    // 
     collapsData=document.querySelectorAll('.nav-item')
     for(let local=0;local<collapsData.length;local++){
         collapsData[local].setAttribute("data-bs-toggle", "collapsed")
